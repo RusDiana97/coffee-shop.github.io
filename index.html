@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-bg-dark">
+    <header>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="./index.html"
+            style="letter-spacing: 0.3rem; font-family: Roboto, sans-serif"
+            >MY COFFEE SHOP</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    style="letter-spacing: 0.1rem"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./about-page.html"
+                    style="letter-spacing: 0.1rem"
+                    >About</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="letter-spacing: 0.1rem"
+                  >
+                    Shop
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-dark"
+                    style="
+                      --bs-dropdown-link-color: white;
+                      --bs-border-color-translucent: none;
+                      --bs-dropdown-border-radius: none;
+                    "
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        style="letter-spacing: 0.1rem"
+                        >Coffee</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        style="letter-spacing: 0.1rem"
+                        >Merch</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="./contact-page.html"
+                    style="letter-spacing: 0.1rem"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="card text-bg-dark text-center"
+        style="--bs-card-border-radius: none"
+      >
+        <video
+          autoplay
+          loop
+          src="./video/coffee-beans-video.mp4"
+          class="video-coffee-beans"
+        ></video>
+        <div class="card-img-overlay">
+          <p class="h6" style="-bss-h6-font-weight: 400">
+            <small>BREAKING COFFEE</small>
+          </p>
+          <h1 class="display-1">MY COFFEE SHOP</h1>
+          <p class="h6">
+            <small>The best coffee anywhere you go</small>
+          </p>
+          <a
+            href="#trending-now"
+            class="btn btn-outline-primary"
+            style="
+              --bs-btn-color: white;
+              --bs-btn-border-color: white;
+              --bs-btn-border-radius: none;
+              --bs-btn-hover-bg: rgb(113, 68, 37);
+              --bs-btn-hover-border-color: rgb(113, 68, 37);
+              --bs-btn-active-bg: rgb(113, 68, 37);
+              --bs-btn-active-border-color: rgb(113, 68, 37);
+            "
+            >WHAT'S TRENDING NOW</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-dark my-5">
+      <div id="home" class="mx-5">
+        <div class="container-fluid bg-dark my-5" style="--bs-gutter-x: 5rem">
+          <div class="card mb-3" style="--bs-card-border-color: none">
+            <div class="row g-0">
+              <div class="col-md-4 bg-dark">
+                <img
+                  src="./images/m-o-e-sZd_RJaM7Ag-unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: white">
+                    Start your day with a coffee
+                  </h5>
+                  <p class="card-text" style="color: white">
+                    Did you know that drinking coffee has many benefits? For
+                    example, it helps your mental health and helps you live
+                    longer. In addition, it reduces the occurrence of two types
+                    of diabetes. Coffee contains antioxidants and vitamins such
+                    as riboflavin, magnesium and potassium. And last but not
+                    least, did you know that coffee can help reduce depression?
+                    And believe us, our coffee will boost your mood!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark my-5" style="--bs-gutter-x: 5rem">
+          <div class="card mb-3" style="--bs-card-border-color: none">
+            <div class="row g-0">
+              <div class="col-md-8 bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: white">Add sugar</h5>
+                  <p class="card-text" style="color: white">
+                    I know I know! Sugar is not the best! But find out that it
+                    has some advantages, plus with our coffee... the perfect
+                    combination! It increases instant energy. The breakdown of
+                    sugar produces glucose, and as we know, glucose is the
+                    body's main source of fuel. However, keep in mind that it is
+                    much healthier to get our dose of sugar from fruits or dairy
+                    products to get more energy from natural sugar. Also, sugar
+                    makes us happy. It produces dopamine in our brain, and
+                    immediately our mood changes to one of joy. Our coffee with
+                    a little sugar will instantly change your mood and make you
+                    a little happier.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 bg-dark">
+                <img
+                  src="./images/laura-paraschivescu-hpwvGTqtzQI-unsplash (1).jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark my-5" style="--bs-gutter-x: 5rem">
+          <div class="card mb-3" style="--bs-card-border-color: none">
+            <div class="row g-0">
+              <div class="col-md-4 bg-dark">
+                <img
+                  src="./images/kwon-junho-gTl3G2bAnZw-unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: white">Add milk</h5>
+                  <p class="card-text" style="color: white">
+                    We usually serve coffee with milk. Lots of milk! Based on
+                    steam, we make milk foam. From here, we reach a real art in
+                    terms of preparing a cup of coffee. We serve you coffee in
+                    various shapes made with the help of foamed milk: hearts,
+                    circles, even portraits! And finally, it is very good to
+                    drink milk because it is an excellent source of protein and
+                    is full of important nutrients such as calcium, phosphorus,
+                    B vitamins, potassium and vitamin D. It is also said that
+                    drinking milk can prevent bone fractures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid bg-dark my-5" style="--bs-gutter-x: 5rem">
+          <div class="card mb-3" style="--bs-card-border-color: none">
+            <div class="row g-0">
+              <div class="col-md-8 bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: white">
+                    Serve a coffee with a good friend
+                  </h5>
+                  <p class="card-text" style="color: white">
+                    Now that you have learned about the benefits of (our) coffee
+                    in combination with those of sugar and milk, we invite you
+                    to serve a cup of coffee with milk and sugar! Or just a
+                    simple coffee! It's your choice! And if you're still going
+                    to visit us, we recommend that you take a good friend with
+                    you because we promise that you'll have a quiet,
+                    comfortable, cozy place to serve your coffee together.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 bg-dark">
+                <img
+                  src="./images/anna-loprais-tKhomhYo73Q-unsplash.jpg"
+                  class="img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="trending-now"
+        class="container-fluid bg-dark my-5"
+        style="--bs-gutter-x: 0"
+      >
+        <div
+          class="card text-bg-dark text-center"
+          style="--bs-card-inner-border-radius: 0px"
+        >
+          <img
+            src="./images/ben-moreland-idjUXbnTpig-unsplash.jpg"
+            class="card-img cup-of-coffee"
+            alt="a-cup-of-coffee"
+          />
+          <div class="card-img-overlay">
+            <h2 class="card-title display-2" style="letter-spacing: 0.2rem">
+              WHAT'S TRENDING NOW
+            </h2>
+            <p
+              class="card-text"
+              style="letter-spacing: 0.1rem; margin-top: 2rem"
+            >
+              <small
+                >Here you will find three of the most desirable coffee packages
+                offered by us</small
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card-group my-5"
+          style="
+            margin-left: 3rem;
+            margin-right: 3rem;
+            --bs-card-border-radius: none;
+          "
+        >
+          <div
+            class="card text-bg-dark"
+            style="
+              margin-left: 1rem;
+              margin-right: 1rem;
+              --bs-card-border-radius: none;
+              --bs-card-border-color: none;
+              --bs-card-inner-border-radius: none;
+            "
+          >
+            <img
+              src="./images/marc-buddha-beans-coffee-co-VV7l9DrgzZ0-unsplash.jpg"
+              class="card-img-top"
+              alt="coffee-pack-1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Buddha Beans</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vel
+                necessitatibus officia quos saepe laudantium quidem magnam eum
+                vitae optio?
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="./buddha-beans-page.html"
+                class="btn btn-outline-primary"
+                style="
+                  --bs-btn-color: white;
+                  --bs-btn-border-color: white;
+                  --bs-btn-border-radius: none;
+                  --bs-btn-hover-bg: rgb(100, 98, 97);
+                  --bs-btn-hover-border-color: rgb(100, 98, 97);
+                  --bs-btn-active-bg: rgb(100, 98, 97);
+                  --bs-btn-active-border-color: rgb(100, 98, 97);
+                "
+                >DETAILS</a
+              >
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark"
+            style="
+              margin-left: 1rem;
+              margin-right: 1rem;
+              --bs-card-border-radius: none;
+              --bs-card-border-color: none;
+            "
+          >
+            <img
+              src="./images/pouchmakers-in-WAtMtTelG_0-unsplash.jpg"
+              class="card-img-top"
+              alt="coffee-pack-2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Copper Coffee</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia,
+                consequuntur ducimus quidem esse error dignissimos nihil earum.
+                Veritatis, esse consequatur.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="./copper-coffee-page.html"
+                class="btn btn-outline-primary"
+                style="
+                  --bs-btn-color: white;
+                  --bs-btn-border-color: white;
+                  --bs-btn-border-radius: none;
+                  --bs-btn-hover-bg: rgb(100, 98, 97);
+                  --bs-btn-hover-border-color: rgb(100, 98, 97);
+                  --bs-btn-active-bg: rgb(100, 98, 97);
+                  --bs-btn-active-border-color: rgb(100, 98, 97);
+                "
+                >DETAILS</a
+              >
+            </div>
+          </div>
+          <div
+            class="card text-bg-dark"
+            style="
+              margin-left: 1rem;
+              margin-right: 1rem;
+              --bs-card-border-radius: none;
+              --bs-card-border-color: none;
+              --bs-card-inner-border-radius: none;
+            "
+          >
+            <img
+              src="./images/jonathan-cooper-q-ppJiZXRFs-unsplash.jpg"
+              class="card-img-top"
+              alt="coffee-pack-3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Starbucks</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+                architecto commodi eius quae voluptatum vel rem quibusdam
+                necessitatibus expedita debitis.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="./starbucks-page.html"
+                class="btn btn-outline-primary"
+                style="
+                  --bs-btn-color: white;
+                  --bs-btn-border-color: white;
+                  --bs-btn-border-radius: none;
+                  --bs-btn-hover-bg: rgb(100, 98, 97);
+                  --bs-btn-hover-border-color: rgb(100, 98, 97);
+                  --bs-btn-active-bg: rgb(100, 98, 97);
+                  --bs-btn-active-border-color: rgb(100, 98, 97);
+                "
+                >DETAILS</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      <div class="container-fluid my-2 bg-dark" style="--bs-gutter-x: 10rem">
+        <div class="row">
+          <div class="col-md-7">
+            <div
+              class="card text-bg-dark mb-3"
+              style="--bs-border-color-translucent: none; font-size: 0.9rem"
+            >
+              <ul
+                class="list-group list-group-flush bg-dark"
+                style="
+                  --bs-list-group-bg: dark;
+                  --bs-list-group-color: white;
+                  --bs-list-group-action-active-color: white;
+                  --bs-list-group-border-color: none;
+                "
+              >
+                <li class="list-group-item">
+                  <a
+                    href="./index.html"
+                    style="
+                      --bs-link-color: white;
+                      text-decoration: none;
+                      --bs-link-hover-color: white;
+                    "
+                    >Home</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="./about-page.html"
+                    style="
+                      --bs-link-color: white;
+                      text-decoration: none;
+                      --bs-link-hover-color: white;
+                    "
+                    >About us</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="./contact-page.html"
+                    style="
+                      --bs-link-color: white;
+                      text-decoration: none;
+                      --bs-link-hover-color: white;
+                    "
+                    >Contact us</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="#"
+                    style="
+                      --bs-link-color: white;
+                      text-decoration: none;
+                      --bs-link-hover-color: white;
+                    "
+                    >Terms of Service</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="#"
+                    style="
+                      --bs-link-color: white;
+                      text-decoration: none;
+                      --bs-link-hover-color: white;
+                    "
+                    >Refund policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div
+              class="card text-bg-dark mb-3"
+              style="
+                --bs-border-color-translucent: none;
+                --bs-card-border-radius: none;
+              "
+            >
+              <form class="form-control text-bg-dark" style="border: none">
+                <div class="mb-3">
+                  <label for="subscribe-input" class="form-label"
+                    ><h5>Subscribe to receive news about our coffee</h5></label
+                  >
+                  <div class="input-group mb-3" style="width: 85%">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="subscribe-input"
+                      placeholder="Enter your email here"
+                      style="font-size: 0.9rem"
+                    />
+                    <span class="input-group-text"
+                      ><i
+                        class="fa-sharp fa-solid fa-envelope"
+                        style="font-size: 2rem; margin-left: 0.5rem"
+                      ></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <span id="subscribe-message"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-right">
+          <div class="col-md-9">
+            <div
+              class="card text-bg-dark mb-3"
+              style="--bs-border-color-translucent: none"
+            >
+              <div class="card-body">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="card text-bg-dark mb-3"
+              style="--bs-border-color-translucent: none"
+            >
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    font-size: 0.6rem;
+                    text-align: right;
+                    display: flex;
+                    justify-content: right;
+                    align-items: right;
+                  "
+                >
+                  &copy; 2022,
+                  <a
+                    class="page-link"
+                    href="./index.html"
+                    style="
+                      --bs-link-color: white;
+                      text-decoration: none;
+                      --bs-link-hover-color: white;
+                    "
+                  >
+                    MY COFFEE SHOP
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid fixed-bottom bg-transparent"
+        style="display: flex; justify-content: flex-end"
+      >
+        <div
+          class="card bg-transparent"
+          style="
+            --bs-card-border-radius: none;
+            --bs-card-border-color: none;
+            --bs-card-inner-border-radius: none;
+          "
+        >
+          <a href="#navbar">
+            <i class="fa-solid fa-chevron-up" style="font-size: 2.2rem"> </i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
