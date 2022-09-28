@@ -27,3 +27,11 @@ You can view de project and navigate on the website:
 
 ### Preview
 
+Here is the main page for MY COFFEE SHOP:
+
+![1](printscreens/1.jpg)
+
+Click on the WHAT'S TRENDING NOW button to see the popular coffee packages on this site:
+
+
+
