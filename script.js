@@ -59,5 +59,25 @@ function contactUs() {
   });
 }
 
+// select quantity for products you want to purchase
+let quantity = 0;
+const quantitySpan = document.getElementById("quantity-value");
+
+function decreaseQuantityValue() {
+  quantity--;
+
+  if (quantity < 0) {
+    quantity = 0;
+  }
+
+  quantitySpan.innerHTML = quantity;
+}
+
+function increaseQuantityValue() {
+  quantity++;
+
+  quantitySpan.innerHTML = quantity;
+}
+
 subscribeToNewsletter();
 contactUs();

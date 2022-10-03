@@ -63,3 +63,21 @@ h5 {
 .fa-chevron-up {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.content {
+  margin: 8%;
+  padding: 4rem 1rem 4rem 1rem;
+}
+
+.login-text {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.nav-link {
+  color: white !important;
+}
