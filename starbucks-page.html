@@ -42,74 +42,93 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    style="letter-spacing: 0.1rem"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./about-page.html"
-                    style="letter-spacing: 0.1rem"
-                    >About</a
-                  >
-                </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  style="letter-spacing: 0.1rem"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./about-page.html"
+                  style="letter-spacing: 0.1rem"
+                  >About</a
+                >
+              </li>
 
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="letter-spacing: 0.1rem"
-                  >
-                    Shop
-                  </a>
-                  <ul
-                    class="dropdown-menu bg-dark"
-                    style="
-                      --bs-dropdown-link-color: white;
-                      --bs-border-color-translucent: none;
-                      --bs-dropdown-border-radius: none;
-                    "
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        style="letter-spacing: 0.1rem"
-                        >Coffee</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        style="letter-spacing: 0.1rem"
-                        >Merch</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    href="./contact-page.html"
-                    style="letter-spacing: 0.1rem"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="letter-spacing: 0.1rem"
+                >
+                  Shop
+                </a>
+                <ul
+                  class="dropdown-menu bg-dark"
+                  style="
+                    --bs-dropdown-link-color: white;
+                    --bs-border-color-translucent: none;
+                    --bs-dropdown-border-radius: none;
+                  "
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./shop-coffee-page.html"
+                      style="letter-spacing: 0.1rem"
+                      >Coffee</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./shop-merch-page.html"
+                      style="letter-spacing: 0.1rem"
+                      >Merch</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="./contact-page.html"
+                  style="letter-spacing: 0.1rem"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./login-page.html"
+                  style="letter-spacing: 0.1rem"
+                  ><i class="fa-solid fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./cart-shopping-page.html"
+                  style="letter-spacing: 0.1rem"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -151,6 +170,7 @@
                 <div style="padding-bottom: 1rem; padding-top: 0.5rem">
                   <button
                     id="quantity-btn-decrease"
+                    onclick="decreaseQuantityValue()"
                     class="btn btn-primary btn-sm"
                     style="
                       --bs-btn-bg: rgb(180, 119, 6);
@@ -173,6 +193,7 @@
                   >
                   <button
                     id="quantity-btn-increase"
+                    onclick="increaseQuantityValue()"
                     class="btn btn-primary btn-sm"
                     style="
                       --bs-btn-bg: rgb(180, 119, 6);
@@ -348,7 +369,11 @@
                     align-items: right;
                   "
                 >
-                  &copy; 2022,
+                  &copy;
+                  <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                  </script>
+                  ,
                   <a
                     class="page-link"
                     href="./index.html"
